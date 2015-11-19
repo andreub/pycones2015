@@ -3,6 +3,7 @@ import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument("-d", "--debug", action='store_true', help="debug output")
 parser.add_argument("-n", "--dryrun", action='store_true', help="dry run")
+#parser.add_argument("-v", "--verbose", action='count', help="verbosity", default=0)
 parser.add_argument("dbname", help="db name")
 parser.add_argument("dbhost", help="db hostname")
 parser.add_argument("dbpasswdfile", help="db password file")
