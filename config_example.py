@@ -1,5 +1,7 @@
 import ConfigParser
 import logging
+logging.basicConfig(level=logging.DEBUG)
+log = logging.getLogger(__file__)
 
 CONFIG_FILE = 'app.conf'
 
@@ -17,6 +19,6 @@ try:
   mycolor = config.get('preferences','color')
   print "my defined color: {}".format(mycolor)
 except ConfigParser.NoOptionError as error:
-  logging.error(error)
+  log.error(error)
 
 
